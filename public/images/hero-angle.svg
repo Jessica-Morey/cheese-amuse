@@ -1,0 +1,107 @@
+<svg viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="4皿の料理を斜め45度から見た食卓">
+  <defs>
+    <linearGradient id="ha-room" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7e0d0"/>
+      <stop offset="100%" stop-color="#f7f1e6"/>
+    </linearGradient>
+    <linearGradient id="ha-table" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f7f1e6"/>
+      <stop offset="55%" stop-color="#fbf8f2"/>
+      <stop offset="100%" stop-color="#efe6d3"/>
+    </linearGradient>
+    <radialGradient id="ha-plate" cx="38%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="75%" stop-color="#f4eee2"/>
+      <stop offset="100%" stop-color="#e2d6bc"/>
+    </radialGradient>
+    <radialGradient id="ha-tomato" cx="35%" cy="28%" r="75%">
+      <stop offset="0%" stop-color="#e6a17e"/>
+      <stop offset="55%" stop-color="#cf7350"/>
+      <stop offset="100%" stop-color="#a3492f"/>
+    </radialGradient>
+    <radialGradient id="ha-basil" cx="42%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#a9b98a"/>
+      <stop offset="70%" stop-color="#7c8c5e"/>
+      <stop offset="100%" stop-color="#5e6d45"/>
+    </radialGradient>
+    <linearGradient id="ha-eclair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c9945f"/>
+      <stop offset="55%" stop-color="#a06a3c"/>
+      <stop offset="100%" stop-color="#7c4d2a"/>
+    </linearGradient>
+    <radialGradient id="ha-tart" cx="40%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#4a2f3a"/>
+      <stop offset="60%" stop-color="#2c1a20"/>
+      <stop offset="100%" stop-color="#170c10"/>
+    </radialGradient>
+    <filter id="ha-shadow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+    <filter id="ha-blur-bg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="330" fill="url(#ha-room)"/>
+  <rect y="300" width="1600" height="700" fill="url(#ha-table)"/>
+
+  <!-- blurred glassware toward the back, suggesting depth -->
+  <g opacity="0.4" filter="url(#ha-blur-bg)">
+    <path d="M 1360 200 C 1340 230 1340 270 1362 292 C 1384 270 1384 230 1360 200 Z" fill="none" stroke="#8a7a5a" stroke-width="4"/>
+    <line x1="1362" y1="292" x2="1362" y2="330" stroke="#8a7a5a" stroke-width="4"/>
+    <ellipse cx="1362" cy="338" rx="24" ry="7" fill="none" stroke="#8a7a5a" stroke-width="4"/>
+  </g>
+  <g opacity="0.4" filter="url(#ha-blur-bg)">
+    <path d="M 210 220 L 232 292 L 232 326 L 214 326 L 214 292 Z" fill="none" stroke="#8a7a5a" stroke-width="4"/>
+    <ellipse cx="223" cy="220" rx="20" ry="26" fill="none" stroke="#8a7a5a" stroke-width="4"/>
+  </g>
+
+  <!-- ===== Back-left: basil mille-crepes ===== -->
+  <g>
+    <ellipse cx="430" cy="400" rx="150" ry="42" fill="#000" opacity="0.14" filter="url(#ha-shadow)"/>
+    <ellipse cx="430" cy="382" rx="150" ry="58" fill="url(#ha-plate)"/>
+    <ellipse cx="430" cy="382" rx="150" ry="58" fill="none" stroke="#b3986a" stroke-width="1.3" opacity="0.45"/>
+    <ellipse cx="430" cy="374" rx="82" ry="34" fill="url(#ha-basil)"/>
+    <ellipse cx="430" cy="374" rx="60" ry="24" fill="none" stroke="#f6f1e6" stroke-width="4" opacity="0.5"/>
+    <path d="M 470 356 C 494 346 510 356 512 372 C 494 376 478 370 470 356 Z" fill="#5c6b45"/>
+  </g>
+
+  <!-- ===== Back-right: cacao eggplant tart ===== -->
+  <g>
+    <ellipse cx="1190" cy="380" rx="160" ry="44" fill="#000" opacity="0.14" filter="url(#ha-shadow)"/>
+    <ellipse cx="1190" cy="360" rx="160" ry="60" fill="url(#ha-plate)"/>
+    <ellipse cx="1190" cy="360" rx="160" ry="60" fill="none" stroke="#b3986a" stroke-width="1.3" opacity="0.45"/>
+    <ellipse cx="1190" cy="356" rx="98" ry="38" fill="#5f4128"/>
+    <ellipse cx="1190" cy="352" rx="80" ry="30" fill="url(#ha-tart)"/>
+    <ellipse cx="1160" cy="340" rx="26" ry="9" fill="#ffffff" opacity="0.16"/>
+  </g>
+
+  <!-- ===== Front-left: tomato shortcake ===== -->
+  <g>
+    <ellipse cx="330" cy="740" rx="255" ry="70" fill="#000" opacity="0.16" filter="url(#ha-shadow)"/>
+    <ellipse cx="330" cy="710" rx="255" ry="98" fill="url(#ha-plate)"/>
+    <ellipse cx="330" cy="710" rx="255" ry="98" fill="none" stroke="#b3986a" stroke-width="1.5" opacity="0.5"/>
+    <ellipse cx="330" cy="695" rx="145" ry="60" fill="url(#ha-tomato)"/>
+    <circle cx="284" cy="676" r="17" fill="#8f3223"/>
+    <circle cx="360" cy="664" r="13" fill="#8f3223"/>
+    <circle cx="330" cy="712" r="14" fill="#8f3223"/>
+    <path d="M 410 656 C 442 640 466 654 470 678 C 444 684 420 676 410 656 Z" fill="#5c6b45"/>
+  </g>
+
+  <!-- ===== Front-center-right: sansho eclair (largest, closest) ===== -->
+  <g>
+    <ellipse cx="1050" cy="820" rx="330" ry="76" fill="#000" opacity="0.18" filter="url(#ha-shadow)"/>
+    <ellipse cx="1050" cy="784" rx="330" ry="112" fill="url(#ha-plate)"/>
+    <ellipse cx="1050" cy="784" rx="330" ry="112" fill="none" stroke="#b3986a" stroke-width="1.5" opacity="0.5"/>
+    <rect x="890" y="742" width="320" height="82" rx="41" fill="url(#ha-eclair)"/>
+    <path d="M 910 780 C 955 762 990 800 1035 780 C 1080 762 1115 800 1160 780 C 1180 771 1195 774 1205 780"
+      stroke="#f6ecd8" stroke-width="9" fill="none" stroke-linecap="round" opacity="0.9"/>
+    <g fill="#3c3220">
+      <circle cx="935" cy="770" r="2.8"/>
+      <circle cx="980" cy="796" r="2.4"/>
+      <circle cx="1035" cy="768" r="2.7"/>
+      <circle cx="1090" cy="796" r="2.4"/>
+      <circle cx="1140" cy="770" r="2.6"/>
+    </g>
+  </g>
+</svg>

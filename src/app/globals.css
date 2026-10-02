@@ -1,26 +1,77 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-ivory: #f6f1e9;
+  --color-warm-white: #fbf9f5;
+  --color-stone: #e7ddcd;
+  --color-charcoal: #18140f;
+  --color-dark-brown: #211a14;
+  --color-espresso: #140f0b;
+  --color-ink: #1c1712;
+  --color-cream-text: #f3ece0;
+  --color-muted-gold: #b3986a;
+  --color-line: rgba(28, 23, 18, 0.14);
+  --color-line-dark: rgba(243, 236, 224, 0.16);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ivory: var(--color-ivory);
+  --color-warm-white: var(--color-warm-white);
+  --color-stone: var(--color-stone);
+  --color-charcoal: var(--color-charcoal);
+  --color-dark-brown: var(--color-dark-brown);
+  --color-espresso: var(--color-espresso);
+  --color-ink: var(--color-ink);
+  --color-cream-text: var(--color-cream-text);
+  --color-muted-gold: var(--color-muted-gold);
+  --color-line: var(--color-line);
+  --color-line-dark: var(--color-line-dark);
+
+  --font-mincho: var(--font-mincho);
+  --font-garamond: var(--font-garamond);
+  --font-sans-body: var(--font-sans-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-warm-white);
+  color: var(--color-ink);
+  font-family: var(--font-sans-body), "Hiragino Mincho ProN", serif;
+  font-feature-settings: "palt";
+}
+
+::selection {
+  background: var(--color-muted-gold);
+  color: var(--color-espresso);
+}
+
+:focus-visible {
+  outline: 1px solid var(--color-muted-gold);
+  outline-offset: 4px;
+}
+
+.font-mincho {
+  font-family: var(--font-mincho), "Hiragino Mincho ProN", serif;
+}
+
+.font-garamond {
+  font-family: var(--font-garamond), var(--font-mincho), serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }

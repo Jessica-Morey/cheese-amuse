@@ -1,0 +1,80 @@
+<svg viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="セミドライトマトのショートケーキ風">
+  <defs>
+    <radialGradient id="d1-bg" cx="50%" cy="32%" r="85%">
+      <stop offset="0%" stop-color="#2a2119"/>
+      <stop offset="55%" stop-color="#1c150f"/>
+      <stop offset="100%" stop-color="#0f0b08"/>
+    </radialGradient>
+    <radialGradient id="d1-plate" cx="42%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fbf7ef"/>
+      <stop offset="70%" stop-color="#efe6d6"/>
+      <stop offset="100%" stop-color="#dfd2ba"/>
+    </radialGradient>
+    <linearGradient id="d1-sponge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#efdcbd"/>
+      <stop offset="100%" stop-color="#dcc196"/>
+    </linearGradient>
+    <linearGradient id="d1-cream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf4e8"/>
+      <stop offset="100%" stop-color="#f0e6d3"/>
+    </linearGradient>
+    <radialGradient id="d1-frost" cx="38%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#e6a17e"/>
+      <stop offset="55%" stop-color="#cf7350"/>
+      <stop offset="100%" stop-color="#a84a34"/>
+    </radialGradient>
+    <radialGradient id="d1-tomato" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#e88a63"/>
+      <stop offset="60%" stop-color="#c1503a"/>
+      <stop offset="100%" stop-color="#8f3223"/>
+    </radialGradient>
+    <filter id="d1-blur-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="d1-blur-bg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#d1-bg)"/>
+
+  <!-- bokeh glass, out of focus -->
+  <g opacity="0.35" filter="url(#d1-blur-bg)">
+    <ellipse cx="960" cy="330" rx="70" ry="95" fill="none" stroke="#cbb98f" stroke-width="4"/>
+    <line x1="960" y1="425" x2="960" y2="470" stroke="#cbb98f" stroke-width="4"/>
+    <ellipse cx="960" cy="482" rx="34" ry="10" fill="none" stroke="#cbb98f" stroke-width="4"/>
+  </g>
+
+  <!-- plate shadow -->
+  <ellipse cx="600" cy="1140" rx="420" ry="86" fill="#000000" opacity="0.45" filter="url(#d1-blur-soft)"/>
+
+  <!-- plate -->
+  <ellipse cx="600" cy="1080" rx="440" ry="172" fill="url(#d1-plate)"/>
+  <ellipse cx="600" cy="1080" rx="440" ry="172" fill="none" stroke="#b3986a" stroke-width="1.5" opacity="0.5"/>
+  <ellipse cx="600" cy="1066" rx="330" ry="120" fill="none" stroke="#c9b98f" stroke-width="1" opacity="0.4"/>
+
+  <!-- cake shadow on plate -->
+  <ellipse cx="600" cy="1015" rx="200" ry="42" fill="#000000" opacity="0.28" filter="url(#d1-blur-soft)"/>
+
+  <!-- sponge base -->
+  <rect x="452" y="905" width="296" height="110" rx="22" fill="url(#d1-sponge)"/>
+  <!-- cream layer -->
+  <rect x="462" y="808" width="276" height="112" rx="20" fill="url(#d1-cream)"/>
+  <!-- top frosting dome -->
+  <path d="M 466 812 C 466 700 734 700 734 812 L 734 830 C 620 790 380 790 466 830 Z" fill="url(#d1-frost)"/>
+  <ellipse cx="600" cy="800" rx="140" ry="58" fill="url(#d1-frost)"/>
+
+  <!-- tomato accents -->
+  <circle cx="548" cy="778" r="30" fill="url(#d1-tomato)"/>
+  <circle cx="626" cy="762" r="24" fill="url(#d1-tomato)"/>
+  <circle cx="600" cy="812" r="20" fill="url(#d1-tomato)"/>
+  <circle cx="540" cy="770" r="7" fill="#f2b79a" opacity="0.7"/>
+  <circle cx="620" cy="754" r="5" fill="#f2b79a" opacity="0.7"/>
+
+  <!-- basil leaf accent -->
+  <path d="M 690 748 C 720 730 742 742 748 766 C 722 772 700 766 690 748 Z" fill="#5c6b45"/>
+  <path d="M 700 752 C 715 752 730 758 740 766" stroke="#3f4a30" stroke-width="1.5" fill="none" opacity="0.6"/>
+
+  <!-- drizzle detail -->
+  <path d="M 500 792 C 540 800 560 782 600 790 C 640 798 660 780 700 788" stroke="#faf4e8" stroke-width="3" fill="none" opacity="0.55" stroke-linecap="round"/>
+</svg>

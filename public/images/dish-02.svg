@@ -1,0 +1,69 @@
+<svg viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="バジルのミルクレープ">
+  <defs>
+    <radialGradient id="d2-bg" cx="55%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#241f16"/>
+      <stop offset="55%" stop-color="#181510"/>
+      <stop offset="100%" stop-color="#0d0b08"/>
+    </radialGradient>
+    <radialGradient id="d2-plate" cx="42%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#fbf7ef"/>
+      <stop offset="70%" stop-color="#efe6d6"/>
+      <stop offset="100%" stop-color="#dfd2ba"/>
+    </radialGradient>
+    <linearGradient id="d2-cream" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#faf4e6"/>
+      <stop offset="100%" stop-color="#efe4cd"/>
+    </linearGradient>
+    <linearGradient id="d2-green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#93a374"/>
+      <stop offset="100%" stop-color="#6f7f52"/>
+    </linearGradient>
+    <filter id="d2-blur-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="d2-blur-bg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#d2-bg)"/>
+
+  <g opacity="0.32" filter="url(#d2-blur-bg)">
+    <ellipse cx="250" cy="300" rx="65" ry="88" fill="none" stroke="#cbb98f" stroke-width="4"/>
+    <line x1="250" y1="388" x2="250" y2="430" stroke="#cbb98f" stroke-width="4"/>
+    <ellipse cx="250" cy="442" rx="32" ry="9" fill="none" stroke="#cbb98f" stroke-width="4"/>
+  </g>
+
+  <ellipse cx="600" cy="1140" rx="420" ry="86" fill="#000000" opacity="0.45" filter="url(#d2-blur-soft)"/>
+  <ellipse cx="600" cy="1080" rx="440" ry="172" fill="url(#d2-plate)"/>
+  <ellipse cx="600" cy="1080" rx="440" ry="172" fill="none" stroke="#b3986a" stroke-width="1.5" opacity="0.5"/>
+  <ellipse cx="600" cy="1066" rx="330" ry="120" fill="none" stroke="#c9b98f" stroke-width="1" opacity="0.4"/>
+
+  <ellipse cx="600" cy="1015" rx="170" ry="40" fill="#000000" opacity="0.28" filter="url(#d2-blur-soft)"/>
+
+  <!-- mille-crepe stacked layers, viewed slightly from the side -->
+  <g>
+    <rect x="470" y="960" width="260" height="26" rx="4" fill="url(#d2-cream)"/>
+    <rect x="474" y="934" width="252" height="24" rx="4" fill="url(#d2-green)"/>
+    <rect x="470" y="910" width="260" height="22" rx="4" fill="url(#d2-cream)"/>
+    <rect x="474" y="886" width="252" height="22" rx="4" fill="url(#d2-green)"/>
+    <rect x="470" y="862" width="260" height="22" rx="4" fill="url(#d2-cream)"/>
+    <rect x="474" y="838" width="252" height="22" rx="4" fill="url(#d2-green)"/>
+    <rect x="470" y="814" width="260" height="22" rx="4" fill="url(#d2-cream)"/>
+    <rect x="474" y="792" width="252" height="20" rx="4" fill="url(#d2-green)"/>
+    <ellipse cx="600" cy="792" rx="130" ry="16" fill="url(#d2-cream)"/>
+  </g>
+
+  <!-- powder dusting -->
+  <g fill="#f7f1e2" opacity="0.55">
+    <circle cx="560" cy="780" r="2.2"/>
+    <circle cx="600" cy="774" r="2"/>
+    <circle cx="636" cy="782" r="2.4"/>
+    <circle cx="580" cy="788" r="1.6"/>
+    <circle cx="618" cy="786" r="1.8"/>
+  </g>
+
+  <!-- basil leaf garnish -->
+  <path d="M 640 762 C 672 744 696 756 702 780 C 674 786 650 780 640 762 Z" fill="#5c6b45"/>
+  <path d="M 652 766 C 666 766 682 772 692 780" stroke="#3f4a30" stroke-width="1.5" fill="none" opacity="0.6"/>
+</svg>

@@ -1,0 +1,64 @@
+<svg viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="金山寺味噌とカッテージ、マスカルポーネの山椒香るエクレア">
+  <defs>
+    <radialGradient id="d3-bg" cx="48%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#2a1f16"/>
+      <stop offset="55%" stop-color="#1c150f"/>
+      <stop offset="100%" stop-color="#100b08"/>
+    </radialGradient>
+    <radialGradient id="d3-plate" cx="42%" cy="35%" r="75%">
+      <stop offset="0%" stop-color="#fbf7ef"/>
+      <stop offset="70%" stop-color="#efe6d6"/>
+      <stop offset="100%" stop-color="#dfd2ba"/>
+    </radialGradient>
+    <linearGradient id="d3-eclair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c9945f"/>
+      <stop offset="55%" stop-color="#a06a3c"/>
+      <stop offset="100%" stop-color="#7c4d2a"/>
+    </linearGradient>
+    <linearGradient id="d3-cream" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f6ecd8"/>
+      <stop offset="100%" stop-color="#e9d8b8"/>
+    </linearGradient>
+    <filter id="d3-blur-soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <filter id="d3-blur-bg" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="1500" fill="url(#d3-bg)"/>
+
+  <g opacity="0.32" filter="url(#d3-blur-bg)">
+    <path d="M 940 300 C 918 320 918 360 940 378 C 962 360 962 320 940 300 Z" fill="none" stroke="#cbb98f" stroke-width="4"/>
+    <line x1="940" y1="378" x2="940" y2="410" stroke="#cbb98f" stroke-width="4"/>
+    <ellipse cx="940" cy="420" rx="26" ry="8" fill="none" stroke="#cbb98f" stroke-width="4"/>
+  </g>
+
+  <!-- long plate for an eclair -->
+  <ellipse cx="600" cy="1160" rx="440" ry="76" fill="#000000" opacity="0.42" filter="url(#d3-blur-soft)"/>
+  <ellipse cx="600" cy="1100" rx="460" ry="140" fill="url(#d3-plate)"/>
+  <ellipse cx="600" cy="1100" rx="460" ry="140" fill="none" stroke="#b3986a" stroke-width="1.5" opacity="0.5"/>
+
+  <ellipse cx="600" cy="1058" rx="230" ry="30" fill="#000000" opacity="0.25" filter="url(#d3-blur-soft)"/>
+
+  <!-- eclair body -->
+  <rect x="380" y="994" width="440" height="96" rx="48" fill="url(#d3-eclair)"/>
+  <!-- glossy highlight -->
+  <ellipse cx="480" cy="1010" rx="90" ry="14" fill="#f0c48d" opacity="0.35"/>
+
+  <!-- cream drizzle -->
+  <path d="M 400 1030 C 460 1006 500 1054 560 1030 C 620 1006 660 1054 720 1030 C 760 1014 780 1030 800 1024"
+    stroke="url(#d3-cream)" stroke-width="10" fill="none" stroke-linecap="round" opacity="0.92"/>
+
+  <!-- sansho pepper flecks -->
+  <g fill="#3c3220">
+    <circle cx="430" cy="1018" r="3.2"/>
+    <circle cx="470" cy="1044" r="2.6"/>
+    <circle cx="520" cy="1016" r="3"/>
+    <circle cx="580" cy="1046" r="2.4"/>
+    <circle cx="640" cy="1018" r="3"/>
+    <circle cx="690" cy="1044" r="2.6"/>
+    <circle cx="740" cy="1020" r="2.8"/>
+  </g>
+</svg>
