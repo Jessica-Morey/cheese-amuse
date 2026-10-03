@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { mincho, garamond, sansBody } from "@/lib/fonts";
 import "./globals.css";
 
 const siteUrl = "https://cheese-amuse.vercel.app";
@@ -34,10 +33,21 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="ja"
-      className={`${mincho.variable} ${garamond.variable} ${sansBody.variable} h-full antialiased`}
-    >
+    <html lang="ja" className="h-full antialiased">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        {/* Root layout applies to every page, so the single-page font warning does not apply. */}
+        {/* eslint-disable-next-line @next/next/no-page-custom-font */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Shippori+Mincho:wght@400;500;600&display=swap"
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-warm-white text-ink">
         {children}
       </body>

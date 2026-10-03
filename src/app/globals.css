@@ -12,6 +12,12 @@
   --color-muted-gold: #b3986a;
   --color-line: rgba(28, 23, 18, 0.14);
   --color-line-dark: rgba(243, 236, 224, 0.16);
+  --font-body-stack: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic UI",
+    "Yu Gothic", "Noto Sans JP", Meiryo, sans-serif;
+  --font-mincho-stack: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho",
+    YuMincho, serif;
+  --font-garamond-stack: "Cormorant Garamond", "Shippori Mincho",
+    "Hiragino Mincho ProN", "Yu Mincho", serif;
 }
 
 @theme inline {
@@ -27,9 +33,9 @@
   --color-line: var(--color-line);
   --color-line-dark: var(--color-line-dark);
 
-  --font-mincho: var(--font-mincho);
-  --font-garamond: var(--font-garamond);
-  --font-sans-body: var(--font-sans-body);
+  --font-mincho: var(--font-mincho-stack);
+  --font-garamond: var(--font-garamond-stack);
+  --font-sans-body: var(--font-body-stack);
 }
 
 html {
@@ -39,7 +45,7 @@ html {
 body {
   background: var(--color-warm-white);
   color: var(--color-ink);
-  font-family: var(--font-sans-body), "Hiragino Mincho ProN", serif;
+  font-family: var(--font-body-stack);
   font-feature-settings: "palt";
 }
 
@@ -54,11 +60,11 @@ body {
 }
 
 .font-mincho {
-  font-family: var(--font-mincho), "Hiragino Mincho ProN", serif;
+  font-family: var(--font-mincho-stack);
 }
 
 .font-garamond {
-  font-family: var(--font-garamond), var(--font-mincho), serif;
+  font-family: var(--font-garamond-stack);
 }
 
 @media (prefers-reduced-motion: reduce) {
